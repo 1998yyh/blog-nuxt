@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^2.18.4",
+    "h3-formidable": "^1.0.0",
+    "nuxt": "^3.12.0",
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3"
+  },
+  "devDependencies": {
+    "@nuxt/content": "^2.12.1",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "@types/node": "^25.0.10"
+  }
+}
