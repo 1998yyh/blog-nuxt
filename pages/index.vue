@@ -23,7 +23,7 @@
       </div>
 
       <!-- 2. Tech Highlight (Tall: 1x2) -->
-      <NuxtLink to="/content/tech" class="col-span-1 md:row-span-2 relative group overflow-hidden rounded-3xl bg-white/50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-white/10 backdrop-blur-xl flex flex-col hover:border-violet-500/30 transition-colors">
+      <NuxtLink to="/tech" class="col-span-1 md:row-span-2 relative group overflow-hidden rounded-3xl bg-white/50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-white/10 backdrop-blur-xl flex flex-col hover:border-violet-500/30 transition-colors">
         <div class="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent"></div>
         <div class="p-6 flex-1 flex flex-col">
           <div class="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center mb-4 text-blue-600 dark:text-blue-400">
