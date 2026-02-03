@@ -11,7 +11,7 @@
                <div class="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                <div class="relative z-10">
-                 <div v-if="article.date" class="text-xs text-zinc-500 mb-3">{{ new Date(article.date).toLocaleDateString() }}</div>
+                 <div v-if="article.date" class="text-xs text-zinc-500 mb-3">{{ new Date(article.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) }}</div>
                  <h2 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3 group-hover:text-black dark:group-hover:text-white transition-colors">{{ article.title }}</h2>
                  <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">{{ article.description }}</p>
 

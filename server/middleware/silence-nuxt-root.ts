@@ -29,7 +29,8 @@ export default defineEventHandler((event) => {
     // 此请求在开发环境下经常由浏览器插件或 Prefetch 触发，若不处理会因找不到文件而报"unhandled" 404 错误
     // 返回一个简单的 200 OK 响应
     // 只要中间件返回了值（且未设为错误状态），Nitro 就会认为该请求已处理，从而消除控制台报错
-    if (event.path === '/_nuxt' || event.path === '/_nuxt/') {
+    const path = event.path.split('?')[0]; // Ignore query parameters
+    if (path === '/_nuxt' || path === '/_nuxt/') {
         return { status: 'OK', message: 'Silenced' }
     }
 })

@@ -10,8 +10,9 @@
     <!-- Navigation -->
     <header class="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 dark:border-white/5 bg-white/50 dark:bg-black/50 backdrop-blur-md transition-colors duration-300">
       <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <NuxtLink to="/" class="font-bold text-xl tracking-tight text-zinc-900 dark:text-white">
-          AG<span class="text-violet-500">.</span>
+        <NuxtLink to="/" class="flex items-center gap-2 font-bold text-xl tracking-tight text-zinc-900 dark:text-white">
+          <img src="/images/logo.png" alt="Logo" class="h-10 w-10 rounded-full object-cover" />
+          <span>AG<span class="text-violet-500">.</span></span>
         </NuxtLink>
         
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium">

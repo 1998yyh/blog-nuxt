@@ -84,7 +84,7 @@
                 {{ article._path.split('/')[2] || 'Uncategorized' }}
               </span>
               <span>•</span>
-              <span v-if="article.date">{{ new Date(article.date).toLocaleDateString() }}</span>
+              <span v-if="article.date">{{ new Date(article.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) }}</span>
             </div>
             <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-200 group-hover:text-black dark:group-hover:text-white transition-colors">{{ article.title }}</h3>
             <p class="text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{{ article.description }}</p>
