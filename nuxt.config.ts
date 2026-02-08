@@ -7,6 +7,19 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/ui'
   ],
+  content: {
+    highlight: {
+      theme: {
+        // Default theme (same as single string)
+        default: 'github-dark',
+        // Theme used if `html.dark`
+        dark: 'github-dark',
+        // Theme used if `html.sepia`
+        sepia: 'monokai'
+      },
+      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini']
+    }
+  },
   runtimeConfig: {
     apiKey: process.env.API_KEY || 'default-dev-key'
   },

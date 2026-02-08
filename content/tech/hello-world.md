@@ -11,7 +11,7 @@ This is a **tech** article running on Nuxt 3 (or 4!) with Markdown.
 
 ## Code Block Test
 
-```ts
+```ts [example.ts]
 const greeting = "Hello Nuxt!"
 console.log(greeting)
 ```
